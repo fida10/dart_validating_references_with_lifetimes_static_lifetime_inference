@@ -1,3 +1,10 @@
+/// Write a function get_static_str that returns a &'static str. 
+/// Demonstrate how Rust infers the 'static lifetime for string literals.
+
+fn get_static_str() -> &'static str {
+    return "This is a static string";
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
